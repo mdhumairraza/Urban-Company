@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP NAVBAR</title>
+
+    <style>
+        body{
+            font-family: axiforma-regular,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            margin: 0px;
+        }
+        #bckimg{
+            background-image: url("https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg");
+            background-repeat: no-repeat;
+            background-size:  100% 550px;
+        }
+        #topnav{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+            height: 40px;
+            margin-top: 5px;
+            padding-top: 10px;
+        }
+        #topnav>div>a>img{
+            height: 100%;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            margin: 5px;
+        }
+        li{
+            margin: auto 13px;
+            font-size: 15px;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        #middlenav{
+            text-align: center;
+            margin-top: 8%;
+            color: white;
+        }
+        #middlenav>div:nth-child(1) p{
+            font-size: small;
+        }
+        #middlenav>h1{
+            font-size: 50px;
+            margin: 0px;
+        }
+        #middlenav>div:nth-child(3){
+            display: flex;
+            justify-content: flex-start;
+            width: 53%;
+            margin: auto;
+        }
+        #middlenav>div:nth-child(3)>div:nth-child(1){
+            color: black;
+            background-color: white;
+            padding: 10px;
+            /* display: inline; */
+            margin-bottom: 100px;
+        }
+        #middlenav>div:nth-child(3)>div:nth-child(2){
+            /* display: inline; */
+            margin-left: 65px;
+        }
+        #middlenav>div:nth-child(3)>div:nth-child(2) input{
+            padding: 15px;
+            /* width: 280%; */
+            width: 130%;
+            margin-top: 37px;
+            display: block;
+            margin-bottom: 7px;
+        }
+        p{
+            display: inline;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="bckimg">
+        <nav id="topnav">
+            <div>
+                <a href="https://www.urbancompany.com/delhi-ncr">
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png" alt="">
+                </a>
+
+            </div>
+            <div>
+                <ul>
+                    <li>Blog</li>
+                    <li>Regular As A Professional</li>
+                    <li>Login/Sign Up</li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="middlenav">
+            <div>
+                <p>Home / Location</p>
+            </div>
+            <h1>Home services, on demand.</h1>
+            <div>
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep/t_medium_res_template/images/supply/partner-app-supply/1661338258375-6c99b1.png" alt="" width="14px" height="20px">
+                    <span>Delhi NCR</span>
+                    <select name="" id=""></select >
+                </div>
+                <div>
+                    <input type="text" placeholder="Search for Services">
+                    <p>Women's Therapies,</p>
+                    <p>Salon for Men,</p>
+                    <p>Men's Therapies</p>
+                    <span>etc</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
