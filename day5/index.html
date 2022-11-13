@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP NAVBAR</title>
+
+    <style>
+        body {
+            font-family: axiforma-regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+            margin: 0px;
+            /* user-select: none; */
+        }
+
+        #bckimg {
+            background-image: linear-gradient(to top,#000000cf,#00000099,#00000063,#00000042),url("https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg");
+            background-repeat: no-repeat;
+            background-size: 100% 550px;
+            height: 550px;
+        }
+
+        #topnav {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+            height: 40px;
+            /* margin-top: 5px; */
+            padding-top: 10px;
+        }
+
+        #topnav>div>a>img {
+            height: 100%;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 5px;
+        }
+
+        li {
+            margin: auto 13px;
+            font-size: 15px;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        #middlenav {
+            text-align: center;
+            margin-top: 8%;
+            color: white;
+        }
+
+        #middlenav>div:nth-child(1) p {
+            font-size: small;
+        }
+
+        #middlenav>h1 {
+            font-size: 50px;
+            margin: 0px;
+        }
+
+        #middlenav>div:nth-child(3) {
+            display: flex;
+            justify-content: flex-start;
+            width: 52%;
+            margin: auto;
+        }
+
+        #middlenav>div:nth-child(3)>div:nth-child(1) {
+            /*location*/
+            color: black;
+            background-color: white;
+            padding: 15px 8px;
+            /* display: inline; */
+            margin-bottom: 100px;
+            margin-top: 40px;
+            border-radius: 5px;
+
+            padding-left: 25px;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        }
+
+        #middlenav>div:nth-child(3)>div:nth-child(1) span {
+            padding-left: 11px;
+
+        }
+
+        #middlenav>div:nth-child(3)>div:nth-child(1) select {
+            border: none;
+            padding-left: 17px;
+        }
+
+        #middlenav>div:nth-child(3)>div:nth-child(2) {
+            /*search*/
+            /* display: inline; */
+            margin-left: 25px;
+            margin-top: 40px;
+        }
+
+        #middlenav>div:nth-child(3)>div:nth-child(2) input {
+            padding: 12px;
+            width: 130%;
+            display: block;
+            margin-bottom: 0px;
+            margin-top: 9px;
+            font-size: 15px;
+            border: none;
+            outline: none;
+        }
+
+        #middlenav>div:nth-child(3)>div:nth-child(2) p {
+            display: inline;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+
+        #middlenav>div:nth-child(3)>div:nth-child(2)>div {
+            display: flex;
+            background-color: white;
+            width: 131%;
+            border-radius: 5px;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        }
+
+        #middlenav>div:nth-child(3)>div:nth-child(2)>div img {
+            height: 20px;
+            margin-top: 17px;
+            padding-left: 17px;
+            padding-right: 20px;
+        }
+
+        #topnav li,
+        #bckimg p,
+        #bckimg span,
+        #middlenav>div:nth-child(3)>div:nth-child(1),
+        select:hover {
+            cursor: pointer;
+        }
+
+
+        #bottomnav>div,
+        #homeServices>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 7px;
+
+            height: 180px;
+            width: 55%;
+            margin: auto;
+            margin-top: -5%;
+            background-color: white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        #bottomnav>div div,
+        #homeServices>div>div {
+            /* border: 3px solid black; */
+            width: 131px;
+            height: 50%;
+            text-align: center;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            color: black;
+        }
+
+        #bottomnav>div img,
+        #homeServices>div>div img {
+            height: 32px;
+            width: 32px;
+        }
+
+        #bottomnav>div div:hover,
+        #homeServices>div>div:hover {
+            cursor: pointer;
+            background-color: rgb(239, 239, 239);
+        }
+
+
+
+        #services h1 {
+            text-align: center;
+            margin: 75px;
+            font-size: xx-large;
+            margin-bottom: 150px;
+        }
+
+        #services {
+            margin: 50px;
+        }
+
+
+        .same {
+            text-align: center;
+        }
+
+        .same>div>h1 {
+            padding: 60px 64px 0px 64px;
+            font-size: 32px;
+            margin: 0px;
+        }
+
+        .same>div>p {
+            color: #757575;
+            font-size: 19px;
+        }
+
+        #Appliances>div>div {
+            grid-template-columns: repeat(3, 1fr);
+            width: 60%;
+        }
+
+        .same>div>div {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            justify-content: space-around;
+            width: 80%;
+            margin: 44px auto;
+        }
+
+        .same>div>div>div:hover {
+            cursor: pointer;
+        }
+
+        .same>div>div>div img {
+            width: 100%;
+            height: 149px;
+            border-radius: 7px;
+            transition: transform 0.5s;
+        }
+
+        .same>div>div>div img:hover {
+            transform: scale(1.09);
+        }
+
+        .same>div>div>div p:nth-child(2) {
+            margin-bottom: 0px;
+            font-size: 14px;
+            color: #212121;
+            font-weight: 500;
+        }
+
+        .same>div>div>div p:nth-child(3) {
+            color: #757575;
+            margin-top: 0px;
+            font-size: 12px;
+        }
+
+        .break {
+            border: 8px solid #f2f4f6;
+        }
+
+        .slideshow-container {
+            position: relative;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+        }
+
+        .next {
+            right: 0%;
+        }
+
+        .mySlides,
+        .mySlides2 {
+            display: none;
+        }
+
+        #insurance img,
+        #policy img,
+        #skillIndia img {
+            width: 100%;
+        }
+
+
+        #sidebar,
+        #salonForWomen,
+        #hairSkinNail {
+            height: 100%;
+            width: 0px;
+            position: fixed;
+            right: 0;
+            margin: 0px;
+
+            background-color: white;
+            overflow-x: hidden;
+
+            transition: width 0.5s;
+        }
+
+        #sidebar span {
+            padding-left: 20px;
+        }
+
+        #sidebar p {
+            display: inline;
+            font-size: 16px;
+            margin-left: 35px;
+            font-weight: 500;
+        }
+
+        #sidebar div:nth-child(1) {
+            height: 50px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-bottom: 1px solid rgb(189, 189, 189);
+            margin-bottom: 50px;
+        }
+
+        #sidebar div:nth-child(2) {
+            height: 50px;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 30px;
+            border: 1px solid black;
+            align-items: center;
+        }
+
+        #sidebar select {
+            height: 90%;
+            border: none;
+            width: 20%;
+            padding-left: 10px;
+            outline-style: none;
+        }
+
+        #sidebar input {
+            width: 73%;
+            height: 90%;
+            border: none;
+            border-left: 1px solid black;
+            padding-left: 10px;
+            font-size: 18px;
+            outline-style: none;
+
+        }
+
+        #sidebar div:nth-child(3) {
+            cursor: pointer;
+            width: 90%;
+            margin: auto;
+            height: 50px;
+            border: 1px solid blue;
+        }
+
+        #sidebar button {
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            color: white;
+            background-color: black;
+        }
+
+        #footer{
+            background-color: black;
+        }
+        #foot{
+            background-color: black;
+            color: wheat;
+            width: 79%;
+            margin: auto;
+            text-align: left;
+        }
+        #foot ul{
+            flex-wrap: wrap;
+            padding: 0px;
+            margin: 0px;
+        }
+        #foot li{
+            margin: 0px;
+            margin-right: 33px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #999999;
+            
+        }
+        #footServing>ul:nth-child(2){
+            flex-direction: column;
+        }
+        #foot span{
+            display: block;
+            margin-bottom: 13px;
+            font-weight: 700;
+        }
+        #footer{
+            padding: 23px 0px;
+        }
+        #border{
+            border-top: 1px solid white;
+        }
+        #foot li:hover{
+            color: white;
+            cursor: pointer;
+        }
+
+
+
+        #bottom_nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 77px;
+            width: 79%;
+            margin: auto;
+        }
+        #bottom_nav>div:nth-child(1){
+            display: flex;
+            height: 50px;
+        }
+        #bottom_nav>div:nth-child(2){
+            display: flex;
+            height: 50px;
+            align-items: center;
+        }
+        #bottom_nav>div:nth-child(3){
+            display: flex;
+            height: 50px;
+        }
+        #bottom_nav>div:nth-child(1) span{
+            color: white;
+            padding-top: 5%;
+            font-size: 13px;
+            padding-left: 23px;
+        }
+        #bottom_nav>div:nth-child(1) img{
+            height: 100%;
+        }
+        #bottom_nav>div:nth-child(2)>img{
+            height: 30%;
+            display: block;
+            margin-right: 20px;
+            width: 19px;
+        }
+        #bottom_nav>div:nth-child(3)>img{
+            height: 100%;
+            width: 40;
+        }
+        #bottom_div img:hover{
+            cursor: pointer;
+        }
+        
+        .sidecss>div{
+            display: flex;
+            height: 53px;
+            padding: 13px;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            border-bottom: 1px solid #c4c4c4;
+        }
+        .sidecss span{
+            padding-right: 13px;
+            font-weight: 600;
+            color: #484848;
+        }
+        .sidecss>div>div{
+            display: flex;
+            height: 53px;
+            padding: 13px;
+            align-items: center;
+        }
+        .sidecss>div:nth-child(1){
+            justify-content: unset;
+            font-size: 19px;
+            cursor: default;
+        }
+        .sidecss img{
+            height: 100%;
+            padding-right: 13px;
+        }
+        .piche{
+            cursor: pointer;
+            background-color: white;
+        }
+        #extranav{
+            position: fixed;
+            top: -201px;
+            background-color: white;
+
+        }
+        #extranav>div{
+            width: 80%;
+            margin: auto;
+            height: 61px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+        #extranav>div>div:nth-child(1){
+            align-items: center;
+            width: 61%;
+            border: 1px solid black;
+            margin: 5px;
+        }
+        #extranav>div>div:nth-child(1) input{
+            width: 83%;
+            height: 41px;
+            outline: none;
+            font-size: 15px;
+            border: none;
+        }
+        #extranav>div>div:nth-child(1) img{
+            height: 17px;
+            width: 20px;
+            padding: 0px 17px;
+            padding-top: 15px;
+            color: rgb(65, 65, 65);
+        }
+        #extranav>div>div:nth-child(2){
+            display: flex;
+            margin: 0px;
+            justify-content: space-between;
+        }
+        #extranav>div>div:nth-child(2)>div{
+            margin-left: 31px;
+            width: 91px;
+            text-align: center;
+            font-size: 13px;
+            overflow: hidden;
+            padding: 10px 0px;
+        }
+        #extranav>div>div:nth-child(2) img{
+            height: 29px;
+            width: 29px;
+        }
+        #extranav>div>div:nth-child(2) p{
+            margin: 0px
+        }
+        #afterLogin{
+            display: none;
+        }
+        .remove-scrolling { 
+            height: 100%; 
+            overflow: hidden;
+
+        }
+        .black{
+            background-image: linear-gradient(to right, red , yellow);
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <div id="sidebar">
+        <div>
+            <span onclick="closeNav()">&#x2715</span>
+            <p>Please Login to Continue</p>
+        </div>
+        <div>
+            <select name="">
+                <option value="">+91</option>
+                <option value="">+1</option>
+                <option value="">+61</option>
+                <option value="">+65</option>
+                <option value="">+91</option>
+                <option value="">+966</option>
+                <option value="">+971</option>
+            </select>
+            <input type="text" placeholder="Number">
+        </div>
+        <div>
+            <button onclick=signIn()>Continue</button>
+        </div>
+    </div>
+
+  
+  
+    <div id="salonForWomen" class="sidecss">
+        <div>
+            <span id="backArrow" onclick="backArrow()" class="piche">&#129120;</span>
+            <p>Salon for Women</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep/t_medium_res_category/images/growth/home-screen/1603078782132-dfcd55.jpeg" alt="">
+                <span>Salon Prime</span>
+            </div>
+            <div>
+                <span>&#x2C3;</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep/t_medium_res_category/images/growth/home-screen/1603078787966-226e17.jpeg" alt="">
+                <span>Salon Classic</span>
+            </div>
+            <div>
+                <span>&#x2C3;</span>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+    <div id="hairSkinNail" class="sidecss">
+        <div>
+            <span id="backArrow" onclick="backArrow2()">&#129120;</span>
+            <p>Hair, Skin & Nails</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep/t_medium_res_category/images/growth/luminosity/1646140571372-aa78b8.png" alt="">
+                <span>Hair Studio for Women</span>
+            </div>
+            <div>
+                <span>&#x2C3;</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep/t_medium_res_category/images/growth/luminosity/1633451331611-b1d2ef.png" alt="">
+                <span>Nail studio for women</span>
+            </div>
+            <div>
+                <span>&#x2C3;</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep/t_medium_res_category/images/growth/home-screen/1632078772568-9b444d.png" alt="">
+                <span>Laser Hair Reduction</span>
+            </div>
+            <div>
+                <span>&#x2C3;</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep/t_medium_res_category/images/growth/home-screen/1632078772568-9b444d.png" alt="">
+                <span>Hydra-derma Facials & Peels</span>
+            </div>
+            <div>
+                <span>&#x2C3;</span>
+            </div>
+        </div>
+            
+        </div>
+    </div>
+
+
+
+    <section id="extranav">
+        <div>
+            <div>
+                <img src="https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-16.png" alt="1">
+                <input type="text" placeholder="Serach for Services">
+            </div>
+            <div>
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_1312fb60.png" alt="2">
+                    <p>Women's Therapies</p>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757629780-2b2187.png" alt="3">
+                    <p>Salon for Men</p>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757731250-ba3308.png" alt="4">
+                    <p>Men's Therapies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <main>
+        <div id="bckimg">
+            <nav id="topnav">
+                <div>
+                    <a href="#">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png"
+                            alt="">
+                    </a>
+
+                </div>
+                <div>
+                    <ul>
+                        <li>Blog</li>
+                        <li>Regular As A Professional</li>
+                        <li id="afterLogin">MyBooking</li>
+                        <li id="login/out" onclick="openNav()">Login/Sign Up</li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section id="middlenav">
+                <div>
+                    <p>Home / Location</p>
+                </div>
+                <h1>Home services, on demand.</h1>
+                <div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep/t_medium_res_template/images/supply/partner-app-supply/1661338258375-6c99b1.png"
+                            alt="" width="20px" height="14px">
+                        <span>Delhi NCR </span>
+                        <select name="" id=""></select>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-16.png"
+                                alt="">
+                            <input type="text" placeholder="Search for Services">
+                        </div>
+                        <p>Women's Therapies,</p>
+                        <p>Salon for Men,</p>
+                        <p>Men's Therapies</p>
+                        <span>etc</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <section id="bottomnav">
+            <div>
+                <div onclick="salonForWomen()">
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757635235-1a139e.png"
+                        alt="">
+                    <p>Salon For Women</p>
+                </div>
+                <div onclick="hairSkinNail()">
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/supply/customer-app-supply/1635331606894-7b633f.png"
+                        alt="">
+                    <p>Hair, Skin & Nails</p>
+                </div>
+                <div onclick="womenTherapies()">
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_1312fb60.png"
+                        alt="">
+                    <p>Women's Therapies</p>
+                </div>
+                <div onclick="menTherapies()">
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757629780-2b2187.png"
+                        alt="">
+                    <p>Salon for Men</p>
+                </div>
+                <a href="/kindhearted-relation-7296/service.html" style="text-decoration: none;">
+                <div onclick="menTherapies()">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757731250-ba3308.png"
+                            alt="">
+                        <p>Men's Therapies</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="services">
+            <h1>Home Services</h1>
+            <div id="homeServices">
+                <div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_72d18950.png"
+                            alt="">
+                        <p>Appliance Repair</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1631679515206-a69389.png"
+                            alt="">
+                        <p>Home Painting</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_6b1f5250.png"
+                            alt="">
+                        <p>Cleaning & Pest</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1641213886588-90a903.png"
+                            alt="">
+                        <p>Disinfection</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_6fbad370.png"
+                            alt="">
+                        <p>Home Repairs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="break"></div>
+
+        <section class="same">
+
+            <div id="slideSHOW">
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1667386493900-1d5e09.jpeg"
+                            alt="">
+                    </div>
+                    <div class="mySlides">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/supply/partner-app-supply/1667472964177-812867.jpeg"
+                            alt="">
+                    </div>
+                    <div class="mySlides">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1667233651076-c210f8.jpeg"
+                            alt="">
+                    </div>
+                    <div class="mySlides">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/luminosity/1667594664089-1b275d.jpeg"
+                            alt="">
+                    </div>
+                    <div class="mySlides">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1667233650651-818df5.jpeg"
+                            alt="">
+                    </div>
+                    <div class="mySlides">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/luminosity/1667544806430-20fdbb.jpeg"
+                            alt="">
+                    </div>
+
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)"> &#10095;</a>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="break"></div>
+
+        <section class="same" id="category">
+
+            <div>
+                <h1>New Category Launches</h1>
+                <p></p>
+                <div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1646140576865-02aba1.jpeg"
+                            alt="">
+                        <p>Expert Counselling</p>
+                        <p>Advanced Skin Treatments</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/bigpictures/carpenter.jpg"
+                            alt="">
+                        <p>Furniture Making, Upholstery & Polish</p>
+                        <p>Furniture Making, Upholstery & Polish</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1635829954373-d05590.jpeg"
+                            alt="">
+                        <p>Air Purifier</p>
+                        <p>Flat ₹100 off</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/supply/customer-app-supply/1643120136395-80523e.jpeg"
+                            alt="">
+                        <p>RO Water Purifier</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="break"></div>
+
+
+        <section class="same" id="Appliances">
+
+            <div>
+                <h1>Appliances</h1>
+                <p>Servicing, Repair, Installation & Uninstallation</p>
+                <div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/category_v2/category_c0667020.png"
+                            alt="">
+                        <p>Geyser</p>
+                        <p>Starts at ₹249</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/category_v2/category_bbb8c690.png"
+                            alt="">
+                        <p>Water Purifier Service</p>
+                        <p>Up to 45% Off</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1635829954373-d05590.jpeg"
+                            alt="">
+                        <p>Air Purifier</p>
+                        <p>Flat ₹100 off</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="break"></div>
+
+        <section class="same" id="spa">
+
+            <div>
+                <h1>Salon, Spa and Massage services</h1>
+                <p>Hygienic & Single use products | Low-contact services</p>
+                <div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1603078782132-dfcd55.jpeg"
+                            alt="">
+                        <p>Salon Prime</p>
+                        <p>Free Waxing</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1615874646690-66ab68.jpeg"
+                            alt="">
+                        <p>Salon for Men</p>
+                        <p>Flat ₹100 off</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1601893536279-77bf02.png"
+                            alt="">
+                        <p>Spa for Women</p>
+                        <p>Free head massage</p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/supply/customer-app-supply/1606211470897-f4afbc.jpeg"
+                            alt="">
+                        <p>Massage for Men</p>
+                        <p>Starts at ₹499</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="break"></div>
+
+
+        <section class="same">
+
+            <div id="slideSHOW">
+                <h1>Cleaning & Pest Control </h1>
+                <div class="slideshow-container">
+                    <div class="mySlides2">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1625159882387-9585c7.jpeg"
+                            alt="">
+                        <p>Bathroom and Kitchen Cleaning</p>
+                    </div>
+                    <div class="mySlides2">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1632396793425-1a5418.jpeg"
+                            alt="">
+                        <p>Sofa & Carpet Cleaning</p>
+                        <p></p>
+                    </div>
+                    <div class="mySlides2">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1630420912606-2fffa6.jpeg"
+                            alt="">
+                        <p>Sofa & Carpet Cleaning</p>
+                        <p></p>
+                    </div>
+                    <div class="mySlides2">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1631159612066-53b210.jpeg"
+                            alt="">
+                        <p>Cockroach, Ant & General Pest Control</p>
+                    </div>
+                    <div class="mySlides2">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1632490257439-ef28d2.jpeg"
+                            alt="">
+                        <p>Bed Bugs Control</p>
+                        <p></p>
+                    </div>
+                    <div class="mySlides2">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1632474326407-0aae21.jpeg"
+                            alt="">
+                        <p>Termite Control</p>
+                        <p></p>
+                    </div>
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)"> &#10095;</a>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="break"></div>
+
+        <section class="same" id="luxury">
+
+            <div>
+                <h1>UC Luxury Experience</h1>
+                <p>Top Professionals | Best Brands | Premium Experience</p>
+                <div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883165804-025664.png"
+                            alt="">
+                        <p>Salon Luxe</p>
+                        <p></p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883164057-dd5910.png"
+                            alt="">
+                        <p>Salon for Men Royale</p>
+                        <p></p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883164904-165c1e.png"
+                            alt="">
+                        <p>CategoryCollection__title--2J8r_</p>
+                        <p></p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883164502-08f9f6.png"
+                            alt="">
+                        <p>Massage Therapy for Men Royale</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="break"></div>
+
+        <section class="same" id="repair">
+
+            <div>
+                <h1>Home Repairs</h1>
+                <p></p>
+                <div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/bigpictures/carpenter.jpg"
+                            alt="">
+                        <p>Furniture Making, Upholstery & Polish</p>
+                        <p></p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/home_screen/carpenter.jpg"
+                            alt="">
+                        <p>Carpenters</p>
+                        <p></p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/category_v2/category_a91b73d0.jpeg"
+                            alt="">
+                        <p>Electricians</p>
+                        <p></p>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/home_screen/plumber.jpg"
+                            alt="">
+                        <p>Plumbers</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="break"></div>
+
+        <section id="insurance">
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_2304/t_high_res_template/categories/category_v2/category_a4e46fa0.png"
+                alt="" height="162px">
+        </section>
+
+
+        <div class="break"></div>
+
+        <section id="policy">
+            <a href="/kindhearted-relation-7296/Anti_Discrimination_Policy.html">
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_2304/t_high_res_template/images/growth/home-screen/1624344861242-558286.png"
+                    alt="" height="162px">
+            </a>
+        </section>
+
+        <div class="break"></div>
+
+        <section id="skillIndia">
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_2304/t_high_res_template/categories/category_v2/category_3cffdf20.png"
+                alt="" height="162px">
+        </section>
+
+        <div class="break"></div>
+    </main>
+
+
+    <section id="footer">
+        <div id="foot">
+            <div id="footInfo">
+                <ul>
+                    <li>About</li>
+                    <li>UC Impact</li>
+                    <li>Terms and conditioins</li>
+                    <li>Privacy Policy</li>
+                    <li>Interest-Based Advertising</li>
+                    <li>Anti Discrimination Policy</li>
+                    <li>Partner Welfare Policy</li>
+                    <li>Informantion Security Policy Statement & Objectiive</li>
+                    <li>Blog</li>
+                    <li>Reviews</li>
+                    <li>Near Me</li>
+                    <li>Careers</li>
+                    <li>Gifts Cards</li>
+                    <li>Contact Us</li>
+                    <li>Quick Links</li>
+                </ul>
+            </div>
+            <div id="border"></div>
+            <div id="footServing">
+                <p>Serving In</p>
+                <ul>
+                    <li>
+                        <span>USA</span>
+                        <ul>
+                            <li>Austin</li>
+                            <li>Dallas</li>
+                            <li>New York City</li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <span>IND</span>
+                        <ul>
+                            <li>Agra</li>
+                            <li>Ahmadabaad</li>
+                            <li>Alwar</li>
+                            <li>Amritsar</li>
+                            <li>Aurangabaad</li>
+                            <li>Banglore</li>
+                            <li>Bhopal</li>
+                            <li>Bhubhaneshwar</li>
+                            <li>Chandigarh</li>
+                            <li>Chennai</li>
+                            <li>Coimbatore</li>
+                            <li>Cuttack</li>
+                            <li>Deharadun</li>
+                            <li>Delhi NCR</li>
+                            <li>Gntur</li>
+                            <li>Guwahati</li>
+                            <li>Gwalior</li>
+                            <li>Hyderabad</li>
+                            <li>Indore</li>
+                            <li>Jabalpur</li>
+                            <li>Jaipur</li>
+                            <li>Jamshed</li>
+                            <li>Jodhpur</li>
+                            <li>Kakinada</li>
+                            <li>Kanpur</li>
+                            <li>Karnal</li>
+                            <li>Kochi</li>
+                            <li>Kolkata</li>
+                            <li>Kota</li>
+                            <li>Lucknow</li>
+                            <li>Ludhiana</li>
+                            <li>Madurai</li>
+                            <li>Meerut</li>
+                            <li>Mumbai</li>
+                            <li>Mysore</li>
+                            <li>Nagpur</li>
+                            <li>Nashik</li>
+                            <li>Panipat</li>
+                            <li>Patna</li>
+                            <li>Prayagraj</li>
+                            <li>Pune</li>
+                            <li>Raipur</li>
+                            <li>Rajahmundry</li>
+                            <li>Ranchi</li>
+                            <li>Rohtak</li>
+                            <li>Sonipat</li>
+                            <li>Surat</li>
+                            <li>Thiruvananthapuram</li>
+                            <li>Udaipur</li>
+                            <li>Vadodara</li>
+                            <li>Varanasi</li>
+                            <li>Viajywada</li>
+                            <li>Vishakhapatnam</li>
+                            <li>Warangal</li>
+                        </ul>
+        
+                    </li>
+                    <li>
+                        <span>UAE</span>
+                        <ul>
+                            <li>Abu Dhabi</li>
+                            <li>Dubao</li>
+                            <li>Sharjah</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>AUS</span>
+                        <ul>
+                            <li>Melbourne</li>
+                            <li>Sydney</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <SPan>SGP</SPan>
+                        <ul>
+                            <li>Singapore</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>KSA</span>
+                        <ul>
+                            <li>Jeddah</li>
+                            <li>Riyadh</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <div id="border"></div>
+        </div>
+        <div>
+            <nav id="bottom_nav">
+                <div>
+                    <a href="index.html">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png"
+                            alt="">
+                    </a>
+                    <span>© 2014-22 UrbanClap Technologies India Pvt. Ltd.</span>
+
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKzCV2dsnUtVEsQR9IYAVOQe2LPxls0OHw2Q&usqp=CAU" alt=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYU_dNLWAxih1Mg7fzjnrjwUgd4UqBjPen5g&usqp=CAU" alt=""><img src="data:image/png;base64,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" alt=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsixM45TOj7DK-HvIH7Xi0lnmffzTbvpOryw&usqp=CAU" alt=""><img src="data:image/png;base64,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" alt=""><img src="data:image/png;base64,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" alt="">
+                </div>
+                <div>
+                    <img src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f907eb0.png" alt="">
+                    <img src="	https://images.urbanclap.com/image/upload/categories/category_v2/category_7f741d10.png" alt="">
+                </div>
+            </nav>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script>
+
+
+
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex].style.display = "block";
+        slides[slideIndex + 1].style.display = "block";
+        slides[slideIndex + 2].style.display = "block";
+        // console.log(slides.length);
+    }
+
+
+    let slideIndex2 = 1;
+    showSlides2(slideIndex2);
+
+    // Next/previous controls
+    function plusSlides2(n) {
+        showSlides2(slideIndex2 += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide2(n) {
+        showSlides2(slideIndex2 = n);
+    }
+
+    function showSlides2(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides2");
+        if (n > slides.length) { slideIndex2 = 1 }
+        if (n < 1) { slideIndex2 = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex2 - 1].style.display = "block";
+        slides[slideIndex2].style.display = "block";
+        slides[slideIndex2 + 1].style.display = "block";
+        slides[slideIndex2 + 2].style.display = "block";
+        // console.log(slides.length);
+    }
+
+
+    function openNav() {
+        
+        document.getElementById("sidebar").style.width = "381px";
+        document.querySelector("main").style.overflow = "hidden";
+        if(document.getElementById("login/out").innerText==="Logout - Verified Customer") {
+            document.getElementById("login/out").innerText= "Login/Sign Up";
+            document.getElementById("afterLogin").style.display="none"
+            document.getElementById("sidebar").style.width = "0";
+        }
+        document.body.classList.add("remove-scrolling"); 
+        document.body.classList.add(".black");  
+
+    };
+
+    function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+        document.body.classList.remove("remove-scrolling"); 
+    };
+
+
+    function salonForWomen() {
+        document.getElementById("salonForWomen").style.width = "381px";
+        document.querySelector("main").style.overflow = "hidden";
+        document.body.classList.add("remove-scrolling");
+
+    };
+
+    function backArrow() {
+        document.getElementById("salonForWomen").style.width = "0";
+        document.body.classList.remove("remove-scrolling"); 
+    };
+
+    function hairSkinNail() {
+        document.getElementById("hairSkinNail").style.width = "381px";
+        document.querySelector("main").style.overflow = "hidden";
+        document.body.classList.add("remove-scrolling");
+
+    };
+
+    function backArrow2() {
+        document.getElementById("hairSkinNail").style.width = "0";
+        document.body.classList.remove("remove-scrolling"); 
+    };
+
+
+
+function signIn(){
+    document.getElementById("afterLogin").style.display ="inline"
+    let loginText =document.getElementById("login/out");
+    loginText.innerText = "Logout - Verified Customer";
+    document.getElementById("sidebar").style.width = "0";
+    document.body.classList.remove("remove-scrolling"); 
+    
+}
+
+
+</script>
