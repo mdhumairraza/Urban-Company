@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+
+    <style>
+        body{
+            width: 73%;
+            margin: 0px;
+            margin: auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #top{
+            /* border: 1px solid red; */
+            /* background-color: antiquewhite; */
+            width: 100%;
+            height: 440px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        #left{
+            /* border: 1px solid blue; */
+            /* background-color: aqua; */
+            width: 100%;
+            height: 175px;
+        }
+        #right{
+            width: 100%;
+            /* height: 440px; */
+            height: 310px;
+            /* border: 1px solid blue; */
+            /* background-color: aquamarine; */
+        }
+        #toScroll{
+            width: 100%;
+            height: 152px;
+            /* border: 1px solid black; */
+            /* background-color: chartreuse; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #toScroll>div{
+            width: 80px;
+            height: 103px;
+            /* border: 1px solid red; */
+            /* background-color: cadetblue; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 11px;
+        }
+        #toScroll>div img{
+            height: 80%;
+            width: 85%;
+            border-radius: 5px;
+        }
+        #main{
+            /* border: 1px solid red; */
+            /* background-color: coral; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #package{
+            /* background-color: magenta; */
+            width: 736px;
+            /* height: 2000px; */
+            display: flex;
+            flex-direction: column;
+        }
+        .noOfPack{
+            /* border: 1px solid deepskyblue; */
+            /* background-color: chartreuse; */
+            height: 270px;
+            width: 80%;
+        }
+        .noOfPack>div:nth-child(1){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .noOfPack>div:nth-child(1)>div:nth-child(1){
+            width: 73%;
+            /* background-color: yellow; */
+            height: 100px;
+            border-bottom: 3px solid #5f5f5f33;
+        }
+        .noOfPack>div:nth-child(1)>div:nth-child(2){
+            width: 21%;
+            /* background-color: yellow; */
+            text-align: center;
+            padding-top: 37px;
+        }
+
+        #add{
+            padding: 5px 17px;
+            border-radius: 8px;
+            background-color: white;
+            color: blue;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+
+
+
+        #offer{
+            /* border: 1px solid red; */
+            /* background-color: darkolivegreen; */
+            width: 340px;
+            height: 320px;
+        }
+        #offer img{
+            width: 100%;
+            padding-top: 150px;
+        }
+        #line{
+            background-color: #5f5f5f33;
+            height: 2px;
+        }
+
+        #left>div:nth-child(1){
+            border: 1px solid rgb(83, 83, 83);
+            display: flex;
+            height: 19px;
+            padding: 8px;
+            width: 101px;
+            border-radius: 7px;
+        }
+        #left>div:nth-child(1) p{
+            font-size: 15px;
+            padding: 0px 11px;
+            margin: 0px;
+            font-weight: 600;
+        }
+        #left h1{
+            font-size: 33px;
+            margin: 11px 11px;
+        }
+        #left>div:nth-child(3){
+            height: 35px;
+            padding: 11px;
+        }
+        #left span{
+            font-size: 15px;
+        }
+        #ratestar{
+            font-size: 15px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <section id="top">
+        <div id="left">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9um-Oqi5R6tZ90QfXTm1JeKJVzSs4_BM1_TSQ-SEJ5y33vCqj4OrZKJBQvmmQYWmuWZ4&usqp=CAU" alt="">
+                <p>UC Safe</p>
+            </div>
+            <div>
+                <h1>Salon for Men</h1>
+            </div>
+            <div>
+                <span id="ratestar">&Star;</span>
+                <span>4.75</span>
+                <span>(123K)</span>
+            </div>
+        </div>
+        <div id="right">
+            <video src="/kindhearted-relation-7296/safety-hindi-salon-for-men-urban-company-ytshorts.savetube.me.mp4" controls height="100%" width="100%" autoplay></video>
+        </div>
+    </section>
+
+    <div id="line"></div>
+
+    <sectoin id="toScroll">
+        <div>
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_1,fl_progressive:steep,q_auto,c_limit/images/growth/luminosity/1646814042922-25f8f1.jpeg" alt="">
+            <p>Packages</p>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_1,fl_progressive:steep,q_auto,c_limit/images/growth/home-screen/1631190374864-78f3e8.jpeg" alt="">
+            <p>Haircut for Men & Kid's</p>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_1,fl_progressive:steep,q_auto,c_limit/images/growth/home-screen/1631189933595-01692d.png" alt="">
+            <p>Hair Color</p>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_1,fl_progressive:steep,q_auto,c_limit/images/growth/home-screen/1631189957304-ea2a7b.png" alt="">
+            <p>Shave/Beard Grooming</p>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_1,fl_progressive:steep,q_auto,c_limit/images/growth/home-screen/1631189857376-d49e47.png" alt="">
+            <p>Detan & Facials</p>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/w_64,dpr_1,fl_progressive:steep,q_auto,c_limit/images/growth/home-screen/1631189905841-237b37.png" alt="">
+            <p>Massage Therapy</p>
+        </div>
+        <!-- <div>
+            <img src="" alt="">
+            <p></p>
+        </div> -->
+    </sectoin>
+
+    <div id="line"></div>
+
+    <sectoin id="main">
+        <div id="package">
+            <h1>Packages</h1>
+            <div class="noOfPack">
+                <div>
+                    <div class="packDetails">
+                        <h3>Haircut + Beard Grooming + Relaxing Head Massage</h3>
+                        <span id="ratestar">⋆</span>
+                        <span>8.5</span>
+                        <span>(123K)</span>
+                    </div>
+                    <div class="add2Cart">
+                        <button id="add">Add</button>
+                    </div>
+                </div>
+                <div class="decription">
+                    <ul>
+                        <li>Men's Haircut</li>
+                        <li>Beard Shave</li>
+                        <li>10 Min Head Massage</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="noOfPack">
+                <div>
+                    <div class="packDetails">
+                        <h3>Haircut + Beard Grooming + Relaxing Head Massage</h3>
+                        <span id="ratestar">⋆</span>
+                        <span>8.5</span>
+                        <span>(123K)</span>
+                    </div>
+                    <div class="add2Cart">
+                        <button id="add">Add</button>
+                    </div>
+                </div>
+                <div class="decription">
+                    <ul>
+                        <li>Men's Haircut</li>
+                        <li>Beard Shave</li>
+                        <li>10 Min Head Massage</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="noOfPack">
+                <div>
+                    <div class="packDetails">
+                        <h3>Haircut + Beard Grooming + Relaxing Head Massage</h3>
+                        <span id="ratestar">⋆</span>
+                        <span>8.5</span>
+                        <span>(123K)</span>
+                    </div>
+                    <div class="add2Cart">
+                        <button id="add">Add</button>
+                    </div>
+                </div>
+                <div class="decription">
+                    <ul>
+                        <li>Men's Haircut</li>
+                        <li>Beard Shave</li>
+                        <li>10 Min Head Massage</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="noOfPack">
+                <div>
+                    <div class="packDetails">
+                        <h3>Haircut + Beard Grooming + Relaxing Head Massage</h3>
+                        <span id="ratestar">⋆</span>
+                        <span>8.5</span>
+                        <span>(123K)</span>
+                    </div>
+                    <div class="add2Cart">
+                        <button id="add">Add</button>
+                    </div>
+                </div>
+                <div class="decription">
+                    <ul>
+                        <li>Men's Haircut</li>
+                        <li>Beard Shave</li>
+                        <li>10 Min Head Massage</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="noOfPack">
+                <div>
+                    <div class="packDetails">
+                        <h3>Haircut + Beard Grooming + Relaxing Head Massage</h3>
+                        <span id="ratestar">⋆</span>
+                        <span>8.5</span>
+                        <span>(123K)</span>
+                    </div>
+                    <div class="add2Cart">
+                        <button id="add">Add</button>
+                    </div>
+                </div>
+                <div class="decription">
+                    <ul>
+                        <li>Men's Haircut</li>
+                        <li>Beard Shave</li>
+                        <li>10 Min Head Massage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="offer">
+            <img src="/kindhearted-relation-7296/offer.png" alt="">
+        </div>
+    </sectoin>
+
+    <div id="cart"></div>
+</body>
+</html>
